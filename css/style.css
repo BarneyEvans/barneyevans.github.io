@@ -1,4 +1,83 @@
-/* Base styles */
+/* Teaching Format Section */
+.teaching-format {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-left: 5px solid var(--secondary-color);
+}
+
+.teaching-format h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.teaching-features {
+    list-style: none;
+    padding: 0;
+}
+
+.teaching-features li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.teaching-features i {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+/* Pricing Box */
+.pricing-info {
+    margin: 30px 0;
+}
+
+.price-box {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.price-main {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.price-amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.price-period {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-left: 5px;
+}
+
+.price-features {
+    padding: 20px;
+}
+
+.price-feature {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.price-feature i {
+    color: #2ecc71;
+    margin-right: 10px;
+}
+
+.price-feature:last-child {
+    margin-bottom: 0;
+}/* Base styles */
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #3498db;
