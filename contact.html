@@ -54,79 +54,44 @@
                         <h4>My Weekly Availability</h4>
                         <p>I'm currently available for online tutoring during these times:</p>
                         
-                        <div class="calendar-view">
-                            <div class="calendar-header">
-                                <div class="calendar-cell">Mon</div>
-                                <div class="calendar-cell">Tue</div>
-                                <div class="calendar-cell">Wed</div>
-                                <div class="calendar-cell">Thu</div>
-                                <div class="calendar-cell">Fri</div>
-                                <div class="calendar-cell">Sat</div>
-                                <div class="calendar-cell">Sun</div>
-                            </div>
-                            
-                            <div class="calendar-body">
-                                <!-- Morning Row: 9am-12pm -->
-                                <div class="time-label">9am-12pm</div>
-                                <div class="calendar-row">
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell available">Available</div>
-                                    <div class="calendar-cell available">Available</div>
-                                </div>
-                                
-                                <!-- Afternoon Row: 12pm-3pm -->
-                                <div class="time-label">12pm-3pm</div>
-                                <div class="calendar-row">
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell available">Available</div>
-                                    <div class="calendar-cell available">Available</div>
-                                </div>
-                                
-                                <!-- Late Afternoon Row: 3pm-5pm -->
-                                <div class="time-label">3pm-5pm</div>
-                                <div class="calendar-row">
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell available">Available<br><small>from 3:30</small></div>
-                                    <div class="calendar-cell available">Available</div>
-                                    <div class="calendar-cell available">Available</div>
-                                </div>
-                                
-                                <!-- Evening Row: 5pm-7pm -->
-                                <div class="time-label">5pm-7pm</div>
-                                <div class="calendar-row">
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell available">Available</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell available">Available<br><small>until 7pm</small></div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                </div>
-                                
-                                <!-- Night Row: 7pm-10pm -->
-                                <div class="time-label">7pm-10pm</div>
-                                <div class="calendar-row">
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell available">Available</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                    <div class="calendar-cell unavailable">-</div>
-                                </div>
-                            </div>
-                        </div>
+                        <table class="availability-table">
+                            <thead>
+                                <tr>
+                                    <th class="day-column">Day</th>
+                                    <th class="time-column">Available Times</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday</td>
+                                    <td class="unavailable">Not available</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                    <td class="unavailable">Not available</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                    <td class="available">5:00 PM - 10:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                    <td class="unavailable">Not available</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td class="available">3:30 PM - 7:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td class="available">9:00 AM - 5:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td class="available">9:00 AM - 5:00 PM</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         
                         <p class="calendar-note">These times are my regular availability. I may be able to accommodate other times by special arrangement - please email me to discuss.</p>
                     </div>
