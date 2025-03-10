@@ -31,199 +31,90 @@
         <div class="container">
             <h2>Subjects I Teach</h2>
             
-            <div class="subject-categories">
-                <h3>GCSE Subjects</h3>
-                <p>I currently tutor students in the following GCSE subjects:</p>
+            <div class="subject-category">
+                <h3>Currently Tutoring (GCSE)</h3>
+                <p>I am actively tutoring students in these GCSE subjects:</p>
                 
-                <div class="subject-accordions">
+                <div class="subject-grid">
                     <!-- GCSE Physics -->
-                    <div class="subject-accordion">
-                        <div class="subject-header" onclick="toggleAccordion(this)">
-                            <i class="fas fa-atom"></i>
-                            <h4>Physics</h4>
-                            <span class="exam-board">AQA</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="subject-content">
-                            <p>I offer comprehensive tutoring in GCSE Physics (AQA), covering all key topics including:</p>
-                            <ul>
-                                <li>Energy and energy transfers</li>
-                                <li>Electricity and circuits</li>
-                                <li>Particle model of matter</li>
-                                <li>Atomic structure and radiation</li>
-                                <li>Forces and motion</li>
-                                <li>Waves and electromagnetic spectrum</li>
-                                <li>Magnetism and electromagnetism</li>
-                                <li>Space physics</li>
-                            </ul>
-                            <div class="resources">
-                                <h5>Sample Resources:</h5>
-                                <ul class="resource-list">
-                                    <li><a href="#" class="pdf-link">Energy transfers worksheet</a></li>
-                                    <li><a href="#" class="pdf-link">Circuit problems practice</a></li>
-                                    <li><a href="#" class="pdf-link">Forces and motion summary</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="subject-tile" onclick="showSubjectDetails('gcse-physics')">
+                        <div class="subject-icon"><i class="fas fa-atom"></i></div>
+                        <h4>GCSE Physics</h4>
+                        <span class="exam-board">AQA</span>
                     </div>
                     
                     <!-- GCSE Chemistry -->
-                    <div class="subject-accordion">
-                        <div class="subject-header" onclick="toggleAccordion(this)">
-                            <i class="fas fa-flask"></i>
-                            <h4>Chemistry</h4>
-                            <span class="exam-board">AQA</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="subject-content">
-                            <p>My GCSE Chemistry tutoring covers all aspects of the AQA syllabus, including:</p>
-                            <ul>
-                                <li>Atomic structure and the periodic table</li>
-                                <li>Bonding, structure, and properties of matter</li>
-                                <li>Quantitative chemistry</li>
-                                <li>Chemical changes and electrolysis</li>
-                                <li>Energy changes in reactions</li>
-                                <li>Rate of reaction and equilibrium</li>
-                                <li>Organic chemistry</li>
-                                <li>Chemical analysis and testing</li>
-                                <li>Chemistry of the atmosphere</li>
-                                <li>Using resources and sustainability</li>
-                            </ul>
-                            <div class="resources">
-                                <h5>Sample Resources:</h5>
-                                <ul class="resource-list">
-                                    <li><a href="#" class="pdf-link">Balancing equations practice</a></li>
-                                    <li><a href="#" class="pdf-link">Periodic table trends summary</a></li>
-                                    <li><a href="#" class="pdf-link">Organic chemistry revision guide</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="subject-tile" onclick="showSubjectDetails('gcse-chemistry')">
+                        <div class="subject-icon"><i class="fas fa-flask"></i></div>
+                        <h4>GCSE Chemistry</h4>
+                        <span class="exam-board">AQA</span>
                     </div>
                     
                     <!-- GCSE Biology -->
-                    <div class="subject-accordion">
-                        <div class="subject-header" onclick="toggleAccordion(this)">
-                            <i class="fas fa-dna"></i>
-                            <h4>Biology</h4>
-                            <span class="exam-board">AQA</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="subject-content">
-                            <p>My GCSE Biology tutoring covers the full AQA curriculum, including:</p>
-                            <ul>
-                                <li>Cell biology and organisation</li>
-                                <li>Infection and response</li>
-                                <li>Bioenergetics (photosynthesis and respiration)</li>
-                                <li>Homeostasis and response</li>
-                                <li>Inheritance, variation, and evolution</li>
-                                <li>Ecology and ecosystems</li>
-                            </ul>
-                            <div class="resources">
-                                <h5>Sample Resources:</h5>
-                                <ul class="resource-list">
-                                    <li><a href="#" class="pdf-link">Cell structure and function notes</a></li>
-                                    <li><a href="#" class="pdf-link">Photosynthesis and respiration summary</a></li>
-                                    <li><a href="#" class="pdf-link">Genetics practice questions</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="subject-tile" onclick="showSubjectDetails('gcse-biology')">
+                        <div class="subject-icon"><i class="fas fa-dna"></i></div>
+                        <h4>GCSE Biology</h4>
+                        <span class="exam-board">AQA</span>
                     </div>
                     
                     <!-- GCSE Mathematics -->
-                    <div class="subject-accordion">
-                        <div class="subject-header" onclick="toggleAccordion(this)">
-                            <i class="fas fa-calculator"></i>
-                            <h4>Mathematics</h4>
-                            <span class="exam-board">Edexcel</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="subject-content">
-                            <p>I provide comprehensive tutoring for Edexcel GCSE Mathematics, covering all key areas:</p>
-                            <ul>
-                                <li>Number (fractions, percentages, standard form)</li>
-                                <li>Algebra (equations, sequences, graphs)</li>
-                                <li>Ratio, proportion, and rates of change</li>
-                                <li>Geometry and measures</li>
-                                <li>Probability and statistics</li>
-                            </ul>
-                            <div class="resources">
-                                <h5>Sample Resources:</h5>
-                                <ul class="resource-list">
-                                    <li><a href="#" class="pdf-link">Algebra practice problems</a></li>
-                                    <li><a href="#" class="pdf-link">Geometry formulas cheat sheet</a></li>
-                                    <li><a href="#" class="pdf-link">Statistics and probability guide</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="subject-tile" onclick="showSubjectDetails('gcse-maths')">
+                        <div class="subject-icon"><i class="fas fa-calculator"></i></div>
+                        <h4>GCSE Mathematics</h4>
+                        <span class="exam-board">Edexcel</span>
+                    </div>
+                    
+                    <!-- GCSE Computer Science -->
+                    <div class="subject-tile" onclick="showSubjectDetails('gcse-cs')">
+                        <div class="subject-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h4>GCSE Computer Science</h4>
+                        <span class="exam-board">OCR</span>
                     </div>
                 </div>
             </div>
             
-            <div class="subject-categories">
-                <h3>A-Level Subjects</h3>
-                <p>Although I haven't tutored these at A-Level yet, I have studied these subjects at A-Level myself with excellent results:</p>
+            <div class="subject-category">
+                <h3>Subjects I Achieved Highly In (A-Level)</h3>
+                <p>I haven't tutored these at A-Level yet, but I achieved excellent results in these subjects:</p>
                 
-                <div class="subject-accordions">
+                <div class="subject-grid">
                     <!-- A-Level Mathematics -->
-                    <div class="subject-accordion">
-                        <div class="subject-header" onclick="toggleAccordion(this)">
-                            <i class="fas fa-square-root-alt"></i>
-                            <h4>Mathematics</h4>
-                            <span class="exam-board">Edexcel</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="subject-content">
-                            <p>Having achieved an A in A-Level Mathematics, I can help with:</p>
-                            <ul>
-                                <li>Pure Mathematics (algebra, functions, calculus)</li>
-                                <li>Statistics</li>
-                                <li>Mechanics</li>
-                            </ul>
-                        </div>
+                    <div class="subject-tile a-level" onclick="showSubjectDetails('alevel-maths')">
+                        <div class="subject-icon"><i class="fas fa-square-root-alt"></i></div>
+                        <h4>A-Level Mathematics</h4>
+                        <span class="exam-board">Edexcel</span>
+                        <span class="grade">Grade: A</span>
                     </div>
                     
                     <!-- A-Level Chemistry -->
-                    <div class="subject-accordion">
-                        <div class="subject-header" onclick="toggleAccordion(this)">
-                            <i class="fas fa-flask"></i>
-                            <h4>Chemistry</h4>
-                            <span class="exam-board">AQA</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="subject-content">
-                            <p>With an A* in A-Level Chemistry, I can help with all aspects including:</p>
-                            <ul>
-                                <li>Physical chemistry (thermodynamics, kinetics, equilibrium)</li>
-                                <li>Inorganic chemistry</li>
-                                <li>Organic chemistry</li>
-                                <li>Analytical techniques</li>
-                            </ul>
-                        </div>
+                    <div class="subject-tile a-level" onclick="showSubjectDetails('alevel-chemistry')">
+                        <div class="subject-icon"><i class="fas fa-flask"></i></div>
+                        <h4>A-Level Chemistry</h4>
+                        <span class="exam-board">AQA</span>
+                        <span class="grade">Grade: A*</span>
                     </div>
                     
                     <!-- A-Level Computer Science -->
-                    <div class="subject-accordion">
-                        <div class="subject-header" onclick="toggleAccordion(this)">
-                            <i class="fas fa-laptop-code"></i>
-                            <h4>Computer Science</h4>
-                            <span class="exam-board">OCR (tentative)</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="subject-content">
-                            <p>With an A* in A-Level Computer Science and studying Computer Science at university, I can help with:</p>
-                            <ul>
-                                <li>Programming concepts</li>
-                                <li>Data structures and algorithms</li>
-                                <li>Computer systems and architecture</li>
-                                <li>Data representation</li>
-                                <li>Networking and security</li>
-                            </ul>
-                        </div>
+                    <div class="subject-tile a-level" onclick="showSubjectDetails('alevel-cs')">
+                        <div class="subject-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h4>A-Level Computer Science</h4>
+                        <span class="exam-board">OCR</span>
+                        <span class="grade">Grade: A*</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- Subject Detail Modal -->
+    <div id="subject-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="subject-detail-content">
+                <!-- Content will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </div>
 
     <section class="cta">
         <div class="container">
@@ -243,20 +134,288 @@
     </footer>
 
     <script>
-        function toggleAccordion(element) {
-            // Toggle active class on the header
-            element.classList.toggle("active");
-            
-            // Get the content element
-            const content = element.nextElementSibling;
-            
-            // Toggle the display of the content
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
+        // Define subject details
+        const subjectDetails = {
+            'gcse-physics': {
+                title: 'GCSE Physics (AQA)',
+                icon: 'fas fa-atom',
+                content: `
+                    <p>I offer comprehensive tutoring in GCSE Physics (AQA), covering all key topics including:</p>
+                    <ul>
+                        <li>Energy and energy transfers</li>
+                        <li>Electricity and circuits</li>
+                        <li>Particle model of matter</li>
+                        <li>Atomic structure and radiation</li>
+                        <li>Forces and motion</li>
+                        <li>Waves and electromagnetic spectrum</li>
+                        <li>Magnetism and electromagnetism</li>
+                        <li>Space physics</li>
+                    </ul>
+                    <div class="resource-section">
+                        <h4>My Teaching Materials:</h4>
+                        <div class="resource-grid">
+                            <div class="resource-item" onclick="previewResource('resources/physics_energy.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Energy Transfers</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/physics_circuits.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Circuit Problems</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/physics_forces.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Forces & Motion</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            'gcse-chemistry': {
+                title: 'GCSE Chemistry (AQA)',
+                icon: 'fas fa-flask',
+                content: `
+                    <p>My GCSE Chemistry tutoring covers all aspects of the AQA syllabus, including:</p>
+                    <ul>
+                        <li>Atomic structure and the periodic table</li>
+                        <li>Bonding, structure, and properties of matter</li>
+                        <li>Quantitative chemistry</li>
+                        <li>Chemical changes and electrolysis</li>
+                        <li>Energy changes in reactions</li>
+                        <li>Rate of reaction and equilibrium</li>
+                        <li>Organic chemistry</li>
+                        <li>Chemical analysis and testing</li>
+                    </ul>
+                    <div class="resource-section">
+                        <h4>My Teaching Materials:</h4>
+                        <div class="resource-grid">
+                            <div class="resource-item" onclick="previewResource('resources/chemistry_equations.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Balancing Equations</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/chemistry_periodic.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Periodic Table</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/chemistry_organic.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Organic Chemistry</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            'gcse-biology': {
+                title: 'GCSE Biology (AQA)',
+                icon: 'fas fa-dna',
+                content: `
+                    <p>My GCSE Biology tutoring covers the full AQA curriculum, including:</p>
+                    <ul>
+                        <li>Cell biology and organisation</li>
+                        <li>Infection and response</li>
+                        <li>Bioenergetics (photosynthesis and respiration)</li>
+                        <li>Homeostasis and response</li>
+                        <li>Inheritance, variation, and evolution</li>
+                        <li>Ecology and ecosystems</li>
+                    </ul>
+                    <div class="resource-section">
+                        <h4>My Teaching Materials:</h4>
+                        <div class="resource-grid">
+                            <div class="resource-item" onclick="previewResource('resources/biology_cells.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Cell Structure</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/biology_respiration.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Respiration</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/biology_genetics.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Genetics</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            'gcse-maths': {
+                title: 'GCSE Mathematics (Edexcel)',
+                icon: 'fas fa-calculator',
+                content: `
+                    <p>I provide comprehensive tutoring for Edexcel GCSE Mathematics, covering all key areas:</p>
+                    <ul>
+                        <li>Number (fractions, percentages, standard form)</li>
+                        <li>Algebra (equations, sequences, graphs)</li>
+                        <li>Ratio, proportion, and rates of change</li>
+                        <li>Geometry and measures</li>
+                        <li>Probability and statistics</li>
+                    </ul>
+                    <div class="resource-section">
+                        <h4>My Teaching Materials:</h4>
+                        <div class="resource-grid">
+                            <div class="resource-item" onclick="previewResource('resources/maths_algebra.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Algebra Practice</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/maths_geometry.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Geometry Formulas</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/maths_stats.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Statistics Guide</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            'gcse-cs': {
+                title: 'GCSE Computer Science (OCR)',
+                icon: 'fas fa-laptop-code',
+                content: `
+                    <p>I can help students with all aspects of GCSE Computer Science, including:</p>
+                    <ul>
+                        <li>Computer systems and architecture</li>
+                        <li>Data representation (binary, hexadecimal)</li>
+                        <li>Programming concepts and algorithms</li>
+                        <li>Networks and security</li>
+                        <li>Databases and SQL</li>
+                        <li>Ethical, legal, and environmental concerns</li>
+                    </ul>
+                    <div class="resource-section">
+                        <h4>My Teaching Materials:</h4>
+                        <div class="resource-grid">
+                            <div class="resource-item" onclick="previewResource('resources/cs_programming.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Programming Concepts</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/cs_algorithms.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Algorithm Design</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/cs_data.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Data Representation</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            'alevel-maths': {
+                title: 'A-Level Mathematics (Edexcel)',
+                icon: 'fas fa-square-root-alt',
+                content: `
+                    <p>Having achieved an A in A-Level Mathematics, I can help with:</p>
+                    <ul>
+                        <li>Pure Mathematics (algebra, functions, calculus)</li>
+                        <li>Statistics (probability, distributions, hypothesis testing)</li>
+                        <li>Mechanics (forces, kinematics, moments)</li>
+                    </ul>
+                    <p class="note">While I haven't formally tutored A-Level Mathematics yet, my strong academic background in this subject enables me to provide high-quality support for students studying this curriculum.</p>
+                `
+            },
+            'alevel-chemistry': {
+                title: 'A-Level Chemistry (AQA)',
+                icon: 'fas fa-flask',
+                content: `
+                    <p>With an A* in A-Level Chemistry, I can help with all aspects including:</p>
+                    <ul>
+                        <li>Physical chemistry (thermodynamics, kinetics, equilibrium)</li>
+                        <li>Inorganic chemistry (periodic table, redox reactions)</li>
+                        <li>Organic chemistry (functional groups, mechanisms, synthesis)</li>
+                        <li>Analytical techniques (NMR, mass spectrometry, IR)</li>
+                    </ul>
+                    <p class="note">While I haven't formally tutored A-Level Chemistry yet, my A* grade and university-level understanding of this subject enable me to provide excellent guidance to A-Level students.</p>
+                `
+            },
+            'alevel-cs': {
+                title: 'A-Level Computer Science (OCR)',
+                icon: 'fas fa-laptop-code',
+                content: `
+                    <p>With an A* in A-Level Computer Science and studying Computer Science at university, I can help with:</p>
+                    <ul>
+                        <li>Programming concepts and software development</li>
+                        <li>Data structures and algorithms</li>
+                        <li>Computer systems and architecture</li>
+                        <li>Data representation and databases</li>
+                        <li>Networking and web technologies</li>
+                        <li>Object-oriented programming</li>
+                    </ul>
+                    <p class="note">While I haven't formally tutored A-Level Computer Science yet, my A* grade and current studies in Computer Science with AI at university give me exceptional knowledge to support students in this subject.</p>
+                `
             }
+        };
+
+        // Function to show subject details
+        function showSubjectDetails(subjectId) {
+            const modal = document.getElementById('subject-modal');
+            const contentDiv = document.getElementById('subject-detail-content');
+            const details = subjectDetails[subjectId];
+            
+            // Create content
+            contentDiv.innerHTML = `
+                <div class="modal-header">
+                    <i class="${details.icon}"></i>
+                    <h3>${details.title}</h3>
+                </div>
+                <div class="modal-body">
+                    ${details.content}
+                </div>
+            `;
+            
+            // Show modal
+            modal.style.display = 'block';
+            
+            // Stop scrolling on background
+            document.body.style.overflow = 'hidden';
         }
+        
+        // Function to preview a resource
+        function previewResource(resourcePath) {
+            // Create a PDF viewer modal
+            const viewerHTML = `
+                <div class="pdf-viewer">
+                    <div class="pdf-viewer-header">
+                        <h3>${resourcePath.split('/').pop()}</h3>
+                        <a href="${resourcePath}" target="_blank" class="btn btn-small">Open in New Tab</a>
+                    </div>
+                    <div class="pdf-viewer-content">
+                        <iframe src="${resourcePath}" width="100%" height="500px"></iframe>
+                    </div>
+                </div>
+            `;
+            
+            // Replace subject detail content with PDF viewer
+            document.getElementById('subject-detail-content').innerHTML = viewerHTML;
+        }
+        
+        // Close modal when clicking the X
+        document.querySelector('.close-modal').addEventListener('click', function() {
+            document.getElementById('subject-modal').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        });
+        
+        // Close modal when clicking outside the content
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('subject-modal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }
+        });
     </script>
 </body>
 </html>
