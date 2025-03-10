@@ -14,7 +14,7 @@
     <header>
         <div class="container">
             <h1>Barney Evans</h1>
-            <p class="tagline">GCSE & A-Level Tutor | Southampton University Computer Science Student</p>
+            <p class="tagline">GCSE & A-Level Tutor | MEng Computer Science with Artificial Intelligence Student at Southampton University</p>
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
@@ -64,22 +64,22 @@
         <div class="container">
             <h2>Subjects I Teach</h2>
             <div class="subject-list">
-                <div class="subject">
+                <div class="subject" onclick="openSubjectPopup('gcse-physics')">
                     <i class="fas fa-atom"></i>
                     <h3>GCSE Physics</h3>
                     <p>AQA</p>
                 </div>
-                <div class="subject">
+                <div class="subject" onclick="openSubjectPopup('gcse-chemistry')">
                     <i class="fas fa-flask"></i>
                     <h3>GCSE Chemistry</h3>
                     <p>AQA</p>
                 </div>
-                <div class="subject">
+                <div class="subject" onclick="openSubjectPopup('gcse-biology')">
                     <i class="fas fa-dna"></i>
                     <h3>GCSE Biology</h3>
                     <p>AQA</p>
                 </div>
-                <div class="subject">
+                <div class="subject" onclick="openSubjectPopup('gcse-maths')">
                     <i class="fas fa-calculator"></i>
                     <h3>GCSE Mathematics</h3>
                     <p>Edexcel</p>
@@ -105,5 +105,218 @@
             </div>
         </div>
     </footer>
+    
+    <!-- Subject Detail Modal -->
+    <div id="subject-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="subject-detail-content">
+                <!-- Content will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Define subject details - same as on subjects.html
+        const subjectDetails = {
+            'gcse-physics': {
+                title: 'GCSE Physics (AQA)',
+                icon: 'fas fa-atom',
+                content: `
+                    <p>I offer comprehensive tutoring in GCSE Physics (AQA), covering all key topics including:</p>
+                    <ul>
+                        <li>Energy and energy transfers</li>
+                        <li>Electricity and circuits</li>
+                        <li>Particle model of matter</li>
+                        <li>Atomic structure and radiation</li>
+                        <li>Forces and motion</li>
+                        <li>Waves and electromagnetic spectrum</li>
+                        <li>Magnetism and electromagnetism</li>
+                        <li>Space physics</li>
+                    </ul>
+                    <div class="resource-section">
+                        <h4>My Teaching Materials:</h4>
+                        <div class="resource-grid">
+                            <div class="resource-item" onclick="previewResource('resources/Magnetism - Physics.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Magnetism</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/Velocity - Physics.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Velocity</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/Waves - Physics.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Waves</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            'gcse-chemistry': {
+                title: 'GCSE Chemistry (AQA)',
+                icon: 'fas fa-flask',
+                content: `
+                    <p>My GCSE Chemistry tutoring covers all aspects of the AQA syllabus, including:</p>
+                    <ul>
+                        <li>Atomic structure and the periodic table</li>
+                        <li>Bonding, structure, and properties of matter</li>
+                        <li>Quantitative chemistry</li>
+                        <li>Chemical changes and electrolysis</li>
+                        <li>Energy changes in reactions</li>
+                        <li>Rate of reaction and equilibrium</li>
+                        <li>Organic chemistry</li>
+                        <li>Chemical analysis and testing</li>
+                    </ul>
+                    <div class="resource-section">
+                        <h4>My Teaching Materials:</h4>
+                        <div class="resource-grid">
+                            <div class="resource-item" onclick="previewResource('resources/Bonding - Chemistry.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Bonding</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/Dynamic_Equilibrium - Chemistry.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Dynamic Equilibrium</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/Rates_of_Reaction - Chemistry.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Rates of Reaction</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            'gcse-biology': {
+                title: 'GCSE Biology (AQA)',
+                icon: 'fas fa-dna',
+                content: `
+                    <p>My GCSE Biology tutoring covers the full AQA curriculum, including:</p>
+                    <ul>
+                        <li>Cell biology and organisation</li>
+                        <li>Infection and response</li>
+                        <li>Bioenergetics (photosynthesis and respiration)</li>
+                        <li>Homeostasis and response</li>
+                        <li>Inheritance, variation, and evolution</li>
+                        <li>Ecology and ecosystems</li>
+                    </ul>
+                    <div class="resource-section">
+                        <h4>My Teaching Materials:</h4>
+                        <div class="resource-grid">
+                            <div class="resource-item" onclick="previewResource('resources/Heart - Biology.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>The Heart</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/Inheritance - Biology.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Inheritance</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            'gcse-maths': {
+                title: 'GCSE Mathematics (Edexcel)',
+                icon: 'fas fa-calculator',
+                content: `
+                    <p>I provide comprehensive tutoring for Edexcel GCSE Mathematics, covering all key areas:</p>
+                    <ul>
+                        <li>Number (fractions, percentages, standard form)</li>
+                        <li>Algebra (equations, sequences, graphs)</li>
+                        <li>Ratio, proportion, and rates of change</li>
+                        <li>Geometry and measures</li>
+                        <li>Probability and statistics</li>
+                    </ul>
+                    <div class="resource-section">
+                        <h4>My Teaching Materials:</h4>
+                        <div class="resource-grid">
+                            <div class="resource-item" onclick="previewResource('resources/Sequences - Maths.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Sequences</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/Trigonometry - Mathematics.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Trigonometry</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/Vectors - Mathematics.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Vectors</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+        // Function to open subject popup
+        function openSubjectPopup(subjectId) {
+            const modal = document.getElementById('subject-modal');
+            const contentDiv = document.getElementById('subject-detail-content');
+            const details = subjectDetails[subjectId];
+            
+            // Create content
+            contentDiv.innerHTML = `
+                <div class="modal-header">
+                    <i class="${details.icon}"></i>
+                    <h3>${details.title}</h3>
+                </div>
+                <div class="modal-body">
+                    ${details.content}
+                </div>
+            `;
+            
+            // Show modal
+            modal.style.display = 'block';
+            
+            // Stop scrolling on background
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // Function to preview a resource
+        function previewResource(resourcePath) {
+            // Create a PDF viewer modal
+            const viewerHTML = `
+                <div class="pdf-viewer">
+                    <div class="pdf-viewer-header">
+                        <a href="${resourcePath}" target="_blank" class="btn btn-small">
+                            <i class="fas fa-external-link-alt"></i> Open in New Tab
+                        </a>
+                    </div>
+                    <div class="pdf-viewer-content">
+                        <iframe src="${resourcePath}" width="100%" height="600px"></iframe>
+                    </div>
+                </div>
+            `;
+            
+            // Replace subject detail content with PDF viewer
+            document.getElementById('subject-detail-content').innerHTML = viewerHTML;
+        }
+        
+        // Close modal when clicking the X
+        document.querySelector('.close-modal').addEventListener('click', function() {
+            document.getElementById('subject-modal').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        });
+        
+        // Close modal when clicking outside the content
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('subject-modal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }
+        });
+    </script>
 </body>
 </html>

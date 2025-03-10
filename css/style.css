@@ -809,10 +809,74 @@ footer .social a:hover {
     color: #666;
 }
 
+/* Testimonials Page */
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.testimonial-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.testimonial-source {
+    padding: 15px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.testimonial-content {
+    padding: 0;
+}
+
+.testimonial-image {
+    width: 100%;
+    display: block;
+}
+
+.add-more-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border: 2px dashed #ddd;
+}
+
+.add-more-content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.add-more-content i {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.add-more-content h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.add-more-content p {
+    color: #666;
+}
+
 .mytutor-feedback-image {
     max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .feedback-image {
