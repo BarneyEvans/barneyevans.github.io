@@ -34,10 +34,30 @@
             flex-wrap: wrap;
             gap: 30px;
             justify-content: space-between;
+            align-items: flex-start;
         }
         .contact-methods, .pricing-column {
             flex: 1;
             min-width: 300px;
+        }
+        /* Style for the pricing tiers */
+        .price-tier {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .price-tier:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .price-tier-level {
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+        .price-tier-rate {
+            float: right;
+            font-weight: 700;
         }
     </style>
 </head>
@@ -84,30 +104,44 @@
                     <div class="pricing-column">
                         <div class="price-box">
                             <div class="price-main">
-                                <span class="price-amount">£20</span>
-                                <span class="price-period">per hour</span>
+                                <span class="price-amount">Pricing</span>
                             </div>
                             <div class="price-features">
-                                <p class="price-feature"><i class="fas fa-check"></i> Free 15-minute consultation</p>
-                                <p class="price-feature"><i class="fas fa-check"></i> Session recordings available</p>
-                                <p class="price-feature"><i class="fas fa-check"></i> Interactive online lessons</p>
-                                <p class="price-feature"><i class="fas fa-check"></i> Personalised resources</p>
+                                <div class="price-tier">
+                                    <span class="price-tier-level">GCSE Level</span>
+                                    <span class="price-tier-rate">from £20/hr</span>
+                                </div>
+                                <div class="price-tier">
+                                    <span class="price-tier-level">A-Level</span>
+                                    <span class="price-tier-rate">from £25/hr</span>
+                                </div>
+                                <div class="price-tier">
+                                    <span class="price-tier-level">University & Specialised</span>
+                                    <span class="price-tier-rate">Please Inquire</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <hr style="margin: 40px auto; width: 50%; border: 0; border-top: 1px solid #ccc;">
+
             <div class="contact-section">
                 <h3>Book Your Free 15-Minute Consultation</h3>
                 <p style="text-align: center;">Select a date and time below to book your free, no-obligation consultation call with me.</p>
                 <div class="calendly-inline-widget" data-url="https://calendly.com/evansba2701/free-15-minute-consultation" style="min-width:320px;height:700px;"></div>
                 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                </div>
+                <p style="text-align: center; font-style: italic; font-size: 0.9em; color: #666; margin-top: 15px;">
+                    Once you book a slot, you will receive an automatic confirmation email and a calendar invitation. You can reschedule or cancel directly from the invitation if needed.
+                </p>
+            </div>
+
+            <hr style="margin: 40px auto; width: 50%; border: 0; border-top: 1px solid #ccc;">
 
             <div class="contact-section">
                 <h3>My General Tutoring Availability</h3>
-                <p style="text-align: center;">The calendar below shows my general tutoring hours. Use the consultation booking tool above to schedule a specific time to talk.</p>
+                <p style="text-align: center;">This calendar shows my general tutoring hours. For specific bookings, please use the consultation tool above to get in touch.</p>
                 <iframe src="https://calendar.google.com/calendar/embed?src=1f72d5b31bcee8e9c61ce433c10fe2632d9044dbd9439329a4f38c133e3514a2%40group.calendar.google.com&ctz=Europe%2FLondon" style="border: 0; width: 100%; height: 600px;" frameborder="0" scrolling="no"></iframe>
             </div>
         </div>
