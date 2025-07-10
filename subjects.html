@@ -39,33 +39,19 @@
             <div class="lesson-approach">
                 <h3>My Teaching Approach</h3>
                 <p>The PDF materials you see below are part of my structured lesson plan. I typically spend the first 15 minutes going over key facts from the topic, asking questions to assess understanding, and then move on to targeted past paper questions to build exam confidence.</p>
-            </div>
-            
-            <div class="subject-category">
-                <h3>Computer Science & Specialised Topics</h3>
-                <p>As a final-year Computer Science with AI student, I offer expert tutoring from introductory to advanced university-level topics.</p>
-                <div class="subject-grid">
-                    <div class="subject-tile" onclick="showSubjectDetails('gcse-cs')">
-                        <div class="subject-icon"><i class="fas fa-laptop-code"></i></div>
-                        <h4>GCSE Computer Science</h4>
-                        <span class="exam-board">OCR</span>
-                    </div>
-                    <div class="subject-tile a-level" onclick="showSubjectDetails('alevel-cs')">
-                        <div class="subject-icon"><i class="fas fa-cogs"></i></div>
-                        <h4>A-Level Computer Science</h4>
-                        <span class="exam-board">OCR</span>
-                    </div>
-                    <div class="subject-tile a-level" onclick="showSubjectDetails('uni-cs')">
-                        <div class="subject-icon"><i class="fas fa-brain"></i></div>
-                        <h4>University-Level & AI</h4>
-                        <span class="exam-board">Python, Java & More</span>
+                
+                <div class="exemplar-preview">
+                    <h4>Sample Teaching Material</h4>
+                    <p>Here's an example of one of my teaching resources:</p>
+                    <div class="pdf-frame">
+                        <iframe src="resources/Bonding - Chemistry.pdf" width="100%" height="500px"></iframe>
                     </div>
                 </div>
             </div>
-
+            
             <div class="subject-category">
-                <h3>GCSE Subjects</h3>
-                <p>I am actively tutoring students in these core GCSE subjects:</p>
+                <h3>Currently Tutoring (GCSE)</h3>
+                <p>I am actively tutoring students in these GCSE subjects:</p>
                 
                 <div class="subject-grid">
                     <div class="subject-tile" onclick="showSubjectDetails('gcse-physics')">
@@ -91,29 +77,74 @@
                         <h4>GCSE Mathematics</h4>
                         <span class="exam-board">Edexcel</span>
                     </div>
+                    
+                    <div class="subject-tile" onclick="showSubjectDetails('gcse-cs')">
+                        <div class="subject-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h4>GCSE Computer Science</h4>
+                        <span class="exam-board">OCR</span>
+                    </div>
                 </div>
             </div>
             
             <div class="subject-category">
-                <h3>A-Level Subjects</h3>
-                <p>I offer tutoring in the A-Level subjects where I achieved excellent results:</p>
+                <h3>Personal A Level Grades</h3>
+                <p>I haven't tutored these at A-Level yet, but I achieved excellent results in these subjects:</p>
                 
                 <div class="subject-grid">
                     <div class="subject-tile a-level" onclick="showSubjectDetails('alevel-maths')">
                         <div class="subject-icon"><i class="fas fa-square-root-alt"></i></div>
                         <h4>A-Level Mathematics</h4>
                         <span class="exam-board">Edexcel</span>
-                        <span class="grade">My Grade: A</span>
+                        <span class="grade">Grade: A</span>
                     </div>
                     
                     <div class="subject-tile a-level" onclick="showSubjectDetails('alevel-chemistry')">
                         <div class="subject-icon"><i class="fas fa-flask"></i></div>
                         <h4>A-Level Chemistry</h4>
                         <span class="exam-board">AQA</span>
-                        <span class="grade">My Grade: A*</span>
+                        <span class="grade">Grade: A*</span>
+                    </div>
+                    
+                    <div class="subject-tile a-level" onclick="showSubjectDetails('alevel-cs')">
+                        <div class="subject-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h4>A-Level Computer Science</h4>
+                        <span class="exam-board">OCR</span>
+                        <span class="grade">Grade: A*</span>
                     </div>
                 </div>
             </div>
+
+            <div class="subject-category">
+                <h3>Computer Science & Specialist Topics</h3>
+                <p>Drawing on my MEng in Computer Science with AI, I also offer specialist tutoring in programming and advanced computing concepts, from KS3 up to University level.</p>
+                
+                <div class="subject-grid">
+                    <div class="subject-tile" onclick="showSubjectDetails('specialist-python')">
+                        <div class="subject-icon"><i class="fab fa-python"></i></div>
+                        <h4>Python Programming</h4>
+                        <span class="exam-board">Beginner to Advanced</span>
+                    </div>
+                    
+                    <div class="subject-tile" onclick="showSubjectDetails('specialist-java')">
+                        <div class="subject-icon"><i class="fab fa-java"></i></div>
+                        <h4>Java Programming</h4>
+                        <span class="exam-board">Object-Oriented Concepts</span>
+                    </div>
+                    
+                    <div class="subject-tile" onclick="showSubjectDetails('specialist-ai')">
+                        <div class="subject-icon"><i class="fas fa-brain"></i></div>
+                        <h4>Artificial Intelligence</h4>
+                        <span class="exam-board">Conceptual & Theoretical</span>
+                    </div>
+
+                    <div class="subject-tile" onclick="showSubjectDetails('specialist-uni')">
+                        <div class="subject-icon"><i class="fas fa-university"></i></div>
+                        <h4>University-Level Support</h4>
+                        <span class="exam-board">Coursework & Exam Prep</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     
@@ -157,7 +188,29 @@
                         <li>Atomic structure and radiation</li>
                         <li>Forces and motion</li>
                         <li>Waves and electromagnetic spectrum</li>
+                        <li>Magnetism and electromagnetism</li>
+                        <li>Space physics</li>
                     </ul>
+                    <div class="resource-section">
+                        <h4>My Teaching Materials:</h4>
+                        <div class="resource-grid">
+                            <div class="resource-item" onclick="previewResource('resources/Magnetism - Physics.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Magnetism</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/Velocity - Physics.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Velocity</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/Waves - Physics.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Waves</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                        </div>
+                    </div>
                 `
             },
             'gcse-chemistry': {
@@ -171,8 +224,30 @@
                         <li>Quantitative chemistry</li>
                         <li>Chemical changes and electrolysis</li>
                         <li>Energy changes in reactions</li>
+                        <li>Rate of reaction and equilibrium</li>
                         <li>Organic chemistry</li>
+                        <li>Chemical analysis and testing</li>
                     </ul>
+                    <div class="resource-section">
+                        <h4>My Teaching Materials:</h4>
+                        <div class="resource-grid">
+                            <div class="resource-item" onclick="previewResource('resources/Bonding - Chemistry.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Bonding</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/Dynamic_Equilibrium - Chemistry.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Dynamic Equilibrium</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/Rates_of_Reaction - Chemistry.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Rates of Reaction</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                        </div>
+                    </div>
                 `
             },
             'gcse-biology': {
@@ -186,7 +261,23 @@
                         <li>Bioenergetics (photosynthesis and respiration)</li>
                         <li>Homeostasis and response</li>
                         <li>Inheritance, variation, and evolution</li>
+                        <li>Ecology and ecosystems</li>
                     </ul>
+                    <div class="resource-section">
+                        <h4>My Teaching Materials:</h4>
+                        <div class="resource-grid">
+                            <div class="resource-item" onclick="previewResource('resources/Heart - Biology.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>The Heart</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/Inheritance - Biology.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Inheritance</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                        </div>
+                    </div>
                 `
             },
             'gcse-maths': {
@@ -201,50 +292,42 @@
                         <li>Geometry and measures</li>
                         <li>Probability and statistics</li>
                     </ul>
+                    <div class="resource-section">
+                        <h4>My Teaching Materials:</h4>
+                        <div class="resource-grid">
+                            <div class="resource-item" onclick="previewResource('resources/Sequences - Maths.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Sequences</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/Trigonometry - Mathematics.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Trigonometry</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                            <div class="resource-item" onclick="previewResource('resources/Vectors - Mathematics.pdf')">
+                                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                                <h5>Vectors</h5>
+                                <span class="preview-btn">Preview</span>
+                            </div>
+                        </div>
+                    </div>
                 `
             },
             'gcse-cs': {
                 title: 'GCSE Computer Science (OCR)',
                 icon: 'fas fa-laptop-code',
                 content: `
-                    <p>I help students master all aspects of GCSE Computer Science, including:</p>
+                    <p>I can help students with all aspects of GCSE Computer Science, including:</p>
                     <ul>
                         <li>Computer systems and architecture</li>
                         <li>Data representation (binary, hexadecimal)</li>
-                        <li>Programming fundamentals in Python</li>
-                        <li>Algorithms and pseudocode</li>
+                        <li>Programming concepts and algorithms</li>
                         <li>Networks and security</li>
+                        <li>Databases and SQL</li>
                         <li>Ethical, legal, and environmental concerns</li>
                     </ul>
-                `
-            },
-             'alevel-cs': {
-                title: 'A-Level Computer Science (OCR)',
-                icon: 'fas fa-cogs',
-                content: `
-                    <p>With an A* in A-Level Computer Science and studying the subject at university, I provide in-depth support for:</p>
-                    <ul>
-                        <li>Advanced programming concepts (OOP, recursion)</li>
-                        <li>Data structures and algorithms</li>
-                        <li>Computer systems and architecture</li>
-                        <li>Databases and SQL</li>
-                        <li>Networking and web technologies</li>
-                        <li>Logical and functional programming paradigms</li>
-                    </ul>
-                    <p class="note">My current studies in AI give me an exceptional, up-to-date knowledge base to support A-Level students aiming for top grades.</p>
-                `
-            },
-            'uni-cs': {
-                title: 'University-Level & AI Tutoring',
-                icon: 'fas fa-brain',
-                content: `
-                    <p>For undergraduate students or enthusiasts, I offer specialised tutoring based on my MEng in Computer Science with AI. Topics include:</p>
-                    <ul>
-                        <li><strong>Programming Languages:</strong> In-depth Python and Java, including best practices, advanced libraries (e.g., NumPy, Pandas, Scikit-learn), and software engineering principles.</li>
-                        <li><strong>Artificial Intelligence:</strong> Foundational concepts of Machine Learning, neural networks, and data analysis.</li>
-                        <li><strong>Core CS Theory:</strong> Support with modules on algorithms, data structures, and computational theory.</li>
-                    </ul>
-                    <p class="note">This tutoring is tailored to your specific university module or project needs. Please get in touch to discuss your requirements.</p>
+                    <p class="note">I'm currently developing specific teaching materials for Computer Science. As someone studying Computer Science with AI at university, I have extensive knowledge of this subject area that I'm eager to share with students.</p>
                 `
             },
             'alevel-maths': {
@@ -257,7 +340,7 @@
                         <li>Statistics (probability, distributions, hypothesis testing)</li>
                         <li>Mechanics (forces, kinematics, moments)</li>
                     </ul>
-                    <p class="note">My strong academic background in this subject enables me to provide high-quality support for students studying this curriculum.</p>
+                    <p class="note">While I haven't formally tutored A-Level Mathematics yet, my strong academic background in this subject enables me to provide high-quality support for students studying this curriculum.</p>
                 `
             },
             'alevel-chemistry': {
@@ -269,8 +352,79 @@
                         <li>Physical chemistry (thermodynamics, kinetics, equilibrium)</li>
                         <li>Inorganic chemistry (periodic table, redox reactions)</li>
                         <li>Organic chemistry (functional groups, mechanisms, synthesis)</li>
+                        <li>Analytical techniques (NMR, mass spectrometry, IR)</li>
                     </ul>
-                    <p class="note">My A* grade and university-level understanding of related concepts enable me to provide excellent guidance to A-Level students.</p>
+                    <p class="note">While I haven't formally tutored A-Level Chemistry yet, my A* grade and university-level understanding of this subject enable me to provide excellent guidance to A-Level students.</p>
+                `
+            },
+            'alevel-cs': {
+                title: 'A-Level Computer Science (OCR)',
+                icon: 'fas fa-laptop-code',
+                content: `
+                    <p>With an A* in A-Level Computer Science and studying Computer Science at university, I can help with:</p>
+                    <ul>
+                        <li>Programming concepts and software development</li>
+                        <li>Data structures and algorithms</li>
+                        <li>Computer systems and architecture</li>
+                        <li>Data representation and databases</li>
+                        <li>Networking and web technologies</li>
+                        <li>Object-oriented programming</li>
+                    </ul>
+                    <p class="note">While I haven't formally tutored A-Level Computer Science yet, my A* grade and current studies in Computer Science with AI at university give me exceptional knowledge to support students in this subject.</p>
+                `
+            },
+            // NEW MODAL CONTENT
+            'specialist-python': {
+                title: 'Python Programming (All Levels)',
+                icon: 'fab fa-python',
+                content: `
+                    <p>As a Computer Science undergraduate, I have extensive experience with Python. I can provide support for all levels, including:</p>
+                    <ul>
+                        <li><strong>KS3 & GCSE:</strong> Fundamental concepts, basic algorithms, and exam preparation.</li>
+                        <li><strong>A-Level:</strong> Advanced data structures, object-oriented programming (OOP), and project work.</li>
+                        <li><strong>University:</strong> Help with coursework, understanding complex libraries (e.g., NumPy, Pandas), and preparing for technical interviews.</li>
+                    </ul>
+                    <p class="note">My approach focuses on building strong foundational knowledge and practical problem-solving skills.</p>
+                `
+            },
+            'specialist-java': {
+                title: 'Java Programming',
+                icon: 'fab fa-java',
+                content: `
+                    <p>I can help students get to grips with Java, focusing on the core principles of Object-Oriented Programming (OOP) that are essential for A-Level and University studies.</p>
+                    <ul>
+                        <li>Classes, Objects, and Methods</li>
+                        <li>Inheritance, Polymorphism, and Encapsulation</li>
+                        <li>Data Structures (e.g., Arrays, ArrayLists)</li>
+                        <li>Coursework and project assistance</li>
+                    </ul>
+                `
+            },
+            'specialist-ai': {
+                title: 'Artificial Intelligence Concepts',
+                icon: 'fas fa-brain',
+                content: `
+                    <p>My MEng is in Computer Science with Artificial Intelligence. I can help A-Level and University students understand the theoretical foundations of AI, including:</p>
+                    <ul>
+                        <li>Core machine learning concepts (e.g., supervised vs. unsupervised learning).</li>
+                        <li>Search algorithms (e.g., A*, Dijkstra's).</li>
+                        <li>Neural networks and deep learning theory.</li>
+                        <li>Ethical implications of AI.</li>
+                    </ul>
+                    <p class="note">This tutoring is focused on the concepts and theory behind AI, providing a solid foundation for further study.</p>
+                `
+            },
+            'specialist-uni': {
+                title: 'University-Level Computer Science Support',
+                icon: 'fas fa-university',
+                content: `
+                    <p>As a final-year MEng student, I can provide valuable support to first and second-year undergraduates.</p>
+                    <ul>
+                        <li><strong>Coursework Guidance:</strong> Help with understanding briefs, structuring code, and debugging.</li>
+                        <li><strong>Module Revision:</strong> Assisting with revision for topics like algorithms, data structures, and software engineering principles.</li>
+                        <li><strong>Technical Skills:</strong> Guidance on using tools like Git, understanding command-line interfaces, and setting up development environments.</li>
+                    </ul>
+                    <p class="note">Please get in touch to discuss your specific module and coursework requirements.</p>
                 `
             }
         };
@@ -281,6 +435,7 @@
             const contentDiv = document.getElementById('subject-detail-content');
             const details = subjectDetails[subjectId];
             
+            // Create content
             contentDiv.innerHTML = `
                 <div class="modal-header">
                     <i class="${details.icon}"></i>
@@ -291,20 +446,45 @@
                 </div>
             `;
             
+            // Show modal
             modal.style.display = 'block';
+            
+            // Stop scrolling on background
             document.body.style.overflow = 'hidden';
         }
         
+        // Function to preview a resource
+        function previewResource(resourcePath) {
+            // Create a PDF viewer modal
+            const viewerHTML = `
+                <div class="pdf-viewer">
+                    <div class="pdf-viewer-header">
+                        <a href="${resourcePath}" target="_blank" class="btn btn-small">
+                            <i class="fas fa-external-link-alt"></i> Open in New Tab
+                        </a>
+                    </div>
+                    <div class="pdf-viewer-content">
+                        <iframe src="${resourcePath}" width="100%" height="600px"></iframe>
+                    </div>
+                </div>
+            `;
+            
+            // Replace subject detail content with PDF viewer
+            document.getElementById('subject-detail-content').innerHTML = viewerHTML;
+        }
+        
+        // Close modal when clicking the X
         document.querySelector('.close-modal').addEventListener('click', function() {
             document.getElementById('subject-modal').style.display = 'none';
-            document.body.style.overflow = 'auto';
+            document.body.style.overflow = 'auto'; // Restore scrolling
         });
         
+        // Close modal when clicking outside the content
         window.addEventListener('click', function(event) {
             const modal = document.getElementById('subject-modal');
             if (event.target === modal) {
                 modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
+                document.body.style.overflow = 'auto'; // Restore scrolling
             }
         });
     </script>
