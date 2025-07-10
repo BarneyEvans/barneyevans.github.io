@@ -38,25 +38,53 @@
     <section class="testimonials">
         <div class="container">
             <h2>Student Testimonials</h2>
-            <p>Here is feedback I've received from students and platforms I've worked with.</p>
+            <p>Here is a summary of my track record and feedback I've received from students on trusted platforms.</p>
             
-            <div class="testimonials-container">
-                <!-- MyTutor Testimonial -->
-                <div class="testimonial-box">
-                    <div class="testimonial-source">MyTutor</div>
+            <div class="testimonials-container" style="flex-direction: column; align-items: center; gap: 40px;">
+
+                <!-- NEW: CREDIBILITY SNAPSHOT CONTAINER -->
+                <div class="testimonial-box" style="width: 100%; max-width: 800px; background-color: #f8f9fa;">
+                    <div class="testimonial-source" style="text-align: center;">Verified Tutor on MyTutor</div>
+                    <div style="padding: 30px;">
+                        <p style="text-align: center; margin-bottom: 30px;">
+                            I have a long and successful history on MyTutor, one of the UK's leading tutoring platforms. My record demonstrates a consistent commitment to quality and student success.
+                        </p>
+                        <div style="display: flex; flex-wrap: wrap; justify-content: space-around; text-align: center; gap: 20px;">
+                            <!-- Stat 1: Lessons Completed -->
+                            <div>
+                                <i class="fas fa-chalkboard-teacher" style="font-size: 2rem; color: var(--secondary-color);"></i>
+                                <h3 style="margin: 10px 0 5px 0;">350+</h3>
+                                <p style="margin: 0;">Lessons Completed</p>
+                            </div>
+                            <!-- Stat 2: 5-Star Reviews -->
+                            <div>
+                                <i class="fas fa-star" style="font-size: 2rem; color: var(--secondary-color);"></i>
+                                <h3 style="margin: 10px 0 5px 0;">5.0 <span style="font-size: 0.7em; font-weight: 400;">/ 5</span></h3>
+                                <p style="margin: 0;">Average Rating</p>
+                            </div>
+                            <!-- Stat 3: Trusted by Schools -->
+                            <div>
+                                <i class="fas fa-school" style="font-size: 2rem; color: var(--secondary-color);"></i>
+                                <h3 style="margin: 10px 0 5px 0;">School-Trusted</h3>
+                                <p style="margin: 0;">Approved for the Schools Programme</p>
+                            </div>
+                        </div>
+                        <div style="text-align: center; margin-top: 30px;">
+                            <a href="https://www.mytutor.co.uk/tutors/9468218/" target="_blank" class="btn">View My Live Profile to Verify</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- EXISTING SCREENSHOT CONTAINER -->
+                <div class="testimonial-box" style="width: 100%; max-width: 800px;">
+                    <div class="testimonial-source">Screenshot of MyTutor Feedback</div>
                     <div class="testimonial-content">
-                        <img src="resources/mytutor_feedback.jpg" alt="MyTutor Feedback" class="testimonial-image">
+                        <a href="https://www.mytutor.co.uk/tutors/9468218/" target="_blank" title="Click to view live profile">
+                           <img src="resources/mytutor_feedback.jpg" alt="MyTutor Feedback" class="testimonial-image">
+                        </a>
                     </div>
                 </div>
-                
-                <!-- More testimonials can be added here in the future -->
-                <div class="add-more-box">
-                    <div class="add-more-content">
-                        <i class="fas fa-quote-right"></i>
-                        <h3>More Testimonials Coming Soon</h3>
-                        <p>As I continue to work with more students, additional feedback will be added here.</p>
-                    </div>
-                </div>
+    
             </div>
         </div>
     </section>
