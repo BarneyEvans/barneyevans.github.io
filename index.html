@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barney Evans - GCSE to University Tutor</title>
+    <title>Barney Evans - GCSE & A-Level Tutor</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8FGXRLDBVE"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -14,40 +17,6 @@
       gtag('js', new Date());
       gtag('config', 'G-8FGXRLDBVE');
     </script>
-    <style>
-        .trust-section {
-            background-color: #f8f9fa;
-            padding: 50px 0;
-            text-align: center;
-        }
-        .trust-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 25px;
-        }
-        .trust-logo {
-            max-width: 180px;
-            margin-bottom: 10px;
-        }
-        .trust-stats {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 40px;
-            margin-bottom: 20px;
-        }
-        .trust-stat i {
-            font-size: 2rem;
-            color: var(--secondary-color);
-        }
-        .trust-stat h3 {
-            margin: 10px 0 5px 0;
-        }
-        .trust-stat p {
-            margin: 0;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -88,41 +57,13 @@
                 <div class="card">
                     <i class="fas fa-chalkboard-teacher"></i>
                     <h3>Tutoring Experience</h3>
-                    <p>Experienced tutor with proven results through MyTutor, summer camps, and private tutoring.</p>
+                    <p>Experienced tutor with proven results through MyTutor, summer camps, and private tutoring. You can view my 5-star rating and 50+ completed lessons on my <a href="testimonials.html">Testimonials page</a>.</p>
                 </div>
                 <div class="card">
                     <i class="fas fa-book"></i>
                     <h3>Subject Expertise</h3>
                     <p>Specialist in GCSE Physics, Chemistry, Biology and Mathematics with knowledge of AQA and Edexcel exam boards.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NEW TRUST & CREDIBILITY SECTION -->
-    <section class="trust-section">
-        <div class="container">
-            <div class="trust-content">
-                <h2>A Trusted & Verified Tutor</h2>
-                <img src="https://www.mytutor.co.uk/wp-content/uploads/2022/07/MyTutor-Logo-2022-Green-e1658742918919.png" alt="MyTutor Logo" class="trust-logo">
-                <div class="trust-stats">
-                    <div class="trust-stat">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                        <h3>50+</h3>
-                        <p>Lessons Completed</p>
-                    </div>
-                    <div class="trust-stat">
-                        <i class="fas fa-star"></i>
-                        <h3>5.0 / 5</h3>
-                        <p>Average Rating</p>
-                    </div>
-                    <div class="trust-stat">
-                        <i class="fas fa-school"></i>
-                        <h3>School-Trusted</h3>
-                        <p>Approved for Schools Programme</p>
-                    </div>
-                </div>
-                <a href="testimonials.html" class="btn btn-secondary">View Verified Reviews</a>
             </div>
         </div>
     </section>
@@ -151,7 +92,6 @@
                     <h3>GCSE Mathematics</h3>
                     <p>Edexcel</p>
                 </div>
-                <!-- NEW COMPUTER SCIENCE TILE -->
                 <div class="subject" onclick="openSubjectPopup('specialist-uni')">
                     <i class="fas fa-brain"></i>
                     <h3>Computer Science & AI</h3>
@@ -179,35 +119,50 @@
         </div>
     </footer>
     
+    <!-- Subject Detail Modal -->
     <div id="subject-modal" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <div id="subject-detail-content">
+                <!-- Content will be loaded here via JavaScript -->
             </div>
         </div>
     </div>
 
     <script>
+        // Define subject details - same as on subjects.html
         const subjectDetails = {
             'gcse-physics': {
                 title: 'GCSE Physics (AQA)',
                 icon: 'fas fa-atom',
-                content: `<p>I offer comprehensive tutoring in GCSE Physics (AQA), covering all key topics including energy, electricity, forces, waves, and space physics.</p><a href='subjects.html' class='btn-small' style='margin-top:15px;'>Learn More</a>`
+                content: `
+                    <p>I offer comprehensive tutoring in GCSE Physics (AQA), covering all key topics including energy, electricity, forces, waves, and space physics.</p>
+                    <a href='subjects.html' class='btn-small' style='margin-top:15px;'>Learn More</a>
+                `
             },
             'gcse-chemistry': {
                 title: 'GCSE Chemistry (AQA)',
                 icon: 'fas fa-flask',
-                content: `<p>My GCSE Chemistry tutoring covers all aspects of the AQA syllabus, including atomic structure, bonding, quantitative chemistry, and organic chemistry.</p><a href='subjects.html' class='btn-small' style='margin-top:15px;'>Learn More</a>`
+                content: `
+                    <p>My GCSE Chemistry tutoring covers all aspects of the AQA syllabus, including atomic structure, bonding, quantitative chemistry, and organic chemistry.</p>
+                    <a href='subjects.html' class='btn-small' style='margin-top:15px;'>Learn More</a>
+                `
             },
             'gcse-biology': {
                 title: 'GCSE Biology (AQA)',
                 icon: 'fas fa-dna',
-                content: `<p>My GCSE Biology tutoring covers the full AQA curriculum, including cell biology, infection and response, bioenergetics, and ecology.</p><a href='subjects.html' class='btn-small' style='margin-top:15px;'>Learn More</a>`
+                content: `
+                    <p>My GCSE Biology tutoring covers the full AQA curriculum, including cell biology, infection and response, bioenergetics, and ecology.</p>
+                    <a href='subjects.html' class='btn-small' style='margin-top:15px;'>Learn More</a>
+                `
             },
             'gcse-maths': {
                 title: 'GCSE Mathematics (Edexcel)',
                 icon: 'fas fa-calculator',
-                content: `<p>I provide comprehensive tutoring for Edexcel GCSE Mathematics, covering all key areas including Number, Algebra, Geometry, and Statistics.</p><a href='subjects.html' class='btn-small' style='margin-top:15px;'>Learn More</a>`
+                content: `
+                    <p>I provide comprehensive tutoring for Edexcel GCSE Mathematics, covering all key areas including Number, Algebra, Geometry, and Statistics.</p>
+                    <a href='subjects.html' class='btn-small' style='margin-top:15px;'>Learn More</a>
+                `
             },
             'specialist-uni': {
                 title: 'University-Level Computer Science Support',
@@ -219,11 +174,13 @@
             }
         };
 
+        // Function to open subject popup
         function openSubjectPopup(subjectId) {
             const modal = document.getElementById('subject-modal');
             const contentDiv = document.getElementById('subject-detail-content');
             const details = subjectDetails[subjectId];
             
+            // Create content
             contentDiv.innerHTML = `
                 <div class="modal-header">
                     <i class="${details.icon}"></i>
@@ -234,20 +191,25 @@
                 </div>
             `;
             
+            // Show modal
             modal.style.display = 'block';
+            
+            // Stop scrolling on background
             document.body.style.overflow = 'hidden';
         }
         
+        // Close modal when clicking the X
         document.querySelector('.close-modal').addEventListener('click', function() {
             document.getElementById('subject-modal').style.display = 'none';
-            document.body.style.overflow = 'auto';
+            document.body.style.overflow = 'auto'; // Restore scrolling
         });
         
+        // Close modal when clicking outside the content
         window.addEventListener('click', function(event) {
             const modal = document.getElementById('subject-modal');
             if (event.target === modal) {
                 modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
+                document.body.style.overflow = 'auto'; // Restore scrolling
             }
         });
     </script>
