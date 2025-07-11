@@ -79,17 +79,16 @@
     margin-bottom: 0;
 }/* Base styles */
 :root {
-    /* Brand core */
-    --primary-color:   #ff5e00; /* warm toasted-walnut brown */
-    --secondary-color: #9C5600; /* burnt-amber orange (white text = 5.6 : 1 contrast) */
-    --accent-color:    #B74128; /* terracotta red – headlines / icons */
-  
+    --primary-color:   #2c3e50; /* Classic, deep navy blue */
+    --secondary-color: #e67e22; /* Vibrant carrot orange for buttons */
+    --accent-color:    #d35400; /* A slightly darker orange for icons/hover */
+
     /* Utility / neutrals */
-    --light-color: #FFF8F2; /* light peach section background */
-    --dark-color:  #3F2313; /* espresso-dark for footers / overlays */
-    --text-color:  #3A2F2C; /* deep cocoa body copy */
-    --bg-color:    #FFFAF7; /* very-light peach page background */
-  }
+    --light-color: #ecf0f1; /* Clean, neutral light grey */
+    --dark-color:  #2c3e50; /* Matching the primary for consistency */
+    --text-color:  #34495e; /* A softer, grey-blue text color */
+    --bg-color:    #ffffff; /* Simple white background */
+}
   
 * {
     margin: 0;
