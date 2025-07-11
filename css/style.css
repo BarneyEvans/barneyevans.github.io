@@ -80,7 +80,7 @@
 }/* Base styles */
 :root {
     /* Brand core */
-    --primary-color:   #70462E; /* warm toasted-walnut brown */
+    --primary-color:   #ff5e00; /* warm toasted-walnut brown */
     --secondary-color: #9C5600; /* burnt-amber orange (white text = 5.6 : 1 contrast) */
     --accent-color:    #B74128; /* terracotta red – headlines / icons */
   
