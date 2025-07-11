@@ -79,11 +79,11 @@
     margin-bottom: 0;
 }/* Base styles */
 :root {
-    --primary-color: #2c3e50;      /* Keeps the existing dark navy */
-    --secondary-color: #d35400;   /* A warm, burnt orange */
+    --primary-color: #1A4314;      /* A deep forest green */
+    --secondary-color: #c69f23;   /* A rich gold/ochre */
     --accent-color: #e74c3c;
     --light-color: #ecf0f1;
-    --dark-color: #2c3e50;
+    --dark-color: #1A4314;
     --text-color: #333;
     --bg-color: #fff;
 }
