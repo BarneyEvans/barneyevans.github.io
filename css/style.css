@@ -79,15 +79,14 @@
     margin-bottom: 0;
 }/* Base styles */
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
+    --primary-color: #2c3e50;      /* Keeps the existing dark navy */
+    --secondary-color: #d35400;   /* A warm, burnt orange */
     --accent-color: #e74c3c;
     --light-color: #ecf0f1;
     --dark-color: #2c3e50;
     --text-color: #333;
     --bg-color: #fff;
 }
-
 * {
     margin: 0;
     padding: 0;
