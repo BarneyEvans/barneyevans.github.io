@@ -79,11 +79,11 @@
     margin-bottom: 0;
 }/* Base styles */
 :root {
-    --primary-color: #583d72;      /* A deep, modern plum */
-    --secondary-color: #f3a683;   /* A soft, warm peach */
+    --primary-color: #1A4314;      /* A deep forest green */
+    --secondary-color: #c69f23;   /* A rich gold/ochre */
     --accent-color: #e74c3c;
     --light-color: #ecf0f1;
-    --dark-color: #583d72;
+    --dark-color: #1A4314;
     --text-color: #333;
     --bg-color: #fff;
 }
