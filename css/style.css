@@ -79,11 +79,11 @@
     margin-bottom: 0;
 }/* Base styles */
 :root {
-    --primary-color: #537072;      /* A dusty, muted blue */
-    --secondary-color: #8E9B97;   /* A soft sage green */
+    --primary-color: #1a1a1a;      /* A very dark charcoal for the base */
+    --secondary-color: #39ff14;   /* A vivid, electric lime green */
     --accent-color: #e74c3c;
-    --light-color: #f4f4f4;      /* A slightly warmer light grey */
-    --dark-color: #537072;
+    --light-color: #f0f0f0;      /* A clean, light grey to not distract */
+    --dark-color: #1a1a1a;
     --text-color: #333;
     --bg-color: #fff;
 }
